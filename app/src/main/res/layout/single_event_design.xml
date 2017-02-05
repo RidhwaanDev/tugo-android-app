@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+
+
+    >
+
+
+
+<android.support.v7.widget.CardView
+    android:visibility="visible"
+    android:id="@+id/card_view_data"
+    android:elevation="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:backgroundTint="@color/red"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="deleteObject"
+        android:scaleType="fitXY"
+
+        />
+
+
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+
+        >
+
+             <TextView
+
+                 android:textColor="@color/white"
+                 android:id="@+id/days_left"
+                 android:paddingLeft="4dp"
+                 android:paddingBottom="16dp"
+                 android:layout_marginTop="16dp"
+                 android:layout_marginRight="16dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="16dp"
+                 android:text="12 DAYS"
+                 android:layout_alignParentRight="true"
+                 android:textStyle="italic"
+
+
+                 />
+
+
+        <TextView
+        android:textColor="@color/white"
+        android:id="@+id/title_of_event"
+        android:padding="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/date_created"
+            android:paddingLeft="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Set Today"
+            android:layout_below="@+id/title_of_event"
+
+            />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHARE"
+            android:textColor="#FFFF"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/date_created"
+            android:layout_alignEnd="@+id/date_created"
+            android:layout_marginRight="29dp"
+            android:paddingRight="4dp"
+             />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/edit_card_view"
+        android:elevation="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:weightSum="1">
+
+
+
+          <ImageView
+              android:id="@+id/remove_event_id"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:src="@drawable/ic_share_icon"
+              android:scaleType="center"
+              android:gravity="center"
+              style="?android:attr/borderlessButtonStyle"
+
+
+              />
+
+
+      </LinearLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
+

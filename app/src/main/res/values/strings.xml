@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tugo</string>
+    <string name="event_dialog_edit_text">"Add event"</string>
+    <string name="title_create_event_dia">"Create Event"</string>
+    <string name="location_create_event_dia">"Location: State or Address"</string>
+    <string name="date_create_event_dia">"Pick Date: State or Address"</string>
+    <string name="link_edit_text">"Copy and Paste link"</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
